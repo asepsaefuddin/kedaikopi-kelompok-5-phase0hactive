@@ -212,7 +212,58 @@ main {
 	padding: 0;
 }
 .card {
-	border: 1px solid #666;
+	border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 20px;
+	margin-top: 20px;
+}
+.profile header {
+	text-align: center;
+}
+.profile h2 {
+  font-style: italic;
+}
+.profile img {
+	width: 150px;
+	height: 150px;
+}
+.sosial-media {
+	width: 100px !important;
+	height: 100px !important;
+	border-radius: 50%;
+}
+th, td {
+  font-size: 12px;
+}
+.profile h2,h3, p, figure img {
+	margin: 10px;
+}
+form #cari {
+	margin:50px auto;
+}
+.search {
+	padding:8px 15px;
+	border:0px solid #ccc;
+}
+#cari button {
+	position:relative;
+	padding:6px 15px;
+	width: 30%;
+	border: none;
+	background-color:#4e69f2;
+	color:#fafafa;
+}
+#cari button:hover  {
+	background-color:#77b5f7;
+	color:#fafafa;
+}
+
+aside figure {
+	margin: auto;
+}
+.sosial .row {
+	/* display: flex; */
+  display: flex;
 }
 /* about section */
 .about, .menu, .contact, .products {
@@ -223,7 +274,7 @@ main {
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
-.about h2 span, .menu h2 span, .contact h2 span, .products h2 span {
+.about h2 span, .menu h2 span, .contact h2 span, .products h2 span, .profile h2 span {
   color: var(--primary);
 }
 .about .row {
@@ -432,10 +483,8 @@ footer .credit a {
   border: 1px solid #666;
   width: 80%;
   /* tambahan */
-  max-width: 600px; /* Lebar maksimum untuk modal */
-
-  max-height: 80%; /* Tinggi maksimum untuk modal */
-
+  max-width: 600px; 
+  max-height: 80%; 
   overflow-y: auto;
   /* height: 50%; */
   animation: animateModal .5s;
@@ -547,6 +596,9 @@ footer .credit a {
 		float: left;
 		width: 75%;
 	}
+  .sosial .row {
+		display: block;
+	}
 }
 /* Tablet */
 /* 758 */
@@ -617,13 +669,22 @@ footer .credit a {
   .contact .row form {
     padding-top: 0;
   }
-
   .modal-content {
     flex-wrap: wrap;
   }
   .modal-container {
+    max-width: 90%; 
+  }
+   .sosial .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    max-width: 90%; /* Lebar maksimum untuk tablet */
+  }
+
+  .sosial .row figure {
+    flex: 1 1 calc(33.33% - 10px);
+    margin: 5px; 
 
   }
 }
