@@ -550,8 +550,8 @@ aside figure {
   border: 1px solid #eee;
   padding-left: 2rem;
 }
+.contact .row form .input-group input, textarea{
 
-.contact .row form .input-group input {
   width: 100%;
   padding: 2rem;
   font-size: 1.7rem;
