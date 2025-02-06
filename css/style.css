@@ -429,7 +429,7 @@ aside figure {
   border: 1px solid #eee;
   padding-left: 2rem;
 }
-.contact .row form .input-group input{
+.contact .row form .input-group input, textarea{
   width: 100%;
   padding: 2rem;
   font-size: 1.7rem;
